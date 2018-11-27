@@ -38,7 +38,7 @@ fn pig_latin(sentence: &mut String) {
         let mut first_found = false;
         let mut starts_with: Option<AsciiCharType> = None;
 
-        for mut ch in word.chars() {
+        for ch in word.chars() {
             let is_alphabetic = ch.is_alphabetic();
             if is_alphabetic && !first_found {
                 // handle first alphabetic char in string after non-alphabetic prefix

@@ -30,7 +30,7 @@ fn pig_latin(sentence: &mut String) {
     let mut cleared = false;
     let sentence_copy: String = sentence.clone();
 
-    for mut word in sentence_copy.split_whitespace() {
+    for word in sentence_copy.split_whitespace() {
         let word = String::from(word);
         let mut new_word = String::new();
         let mut new_word_suffix = String::new();
